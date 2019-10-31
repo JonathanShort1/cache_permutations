@@ -46,3 +46,4 @@ int main(int argc, char* argv[])
     free(arr);
     file.close();
     return 0;
+}

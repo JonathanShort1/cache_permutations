@@ -31,7 +31,7 @@ void generate(uint32_t *arr, uint32_t n) {
 
 void write_out(const char *out_file, uint32_t *arr, uint32_t n) {
     FILE *fp;
-    fp = fopen(out_file, "ab");
+    fp = fopen(out_file, "wb");
     fwrite(arr, sizeof(int), n, fp);
     fclose(fp);
 }
